@@ -16,14 +16,20 @@ public class Shooter {
 
     private Victor vic1, vic2;
     
+    public DoubleVictor vic;
+    
     private Solenoid solIn, solOut;
     
-    public Shooter(Victor vic1, Victor vic2, Solenoid solIn, Solenoid solOut){
+    public Shooter(Solenoid solIn, Solenoid solOut, DoubleVictor vic){
         this.solIn = solIn;
         this.solOut = solOut;
-        this.vic1 = vic1;
-        this.vic2 = vic2;
+        this.vic = vic;
         
     } 
+    public void Start(){
+        vic.set(.2);
+        
+    }
+    
 
 }
