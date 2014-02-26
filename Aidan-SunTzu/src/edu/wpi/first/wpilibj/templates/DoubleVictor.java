@@ -26,9 +26,23 @@ public class DoubleVictor implements SpeedController {
         vic1.set(newVal);
         vic2.set(newVal);
     }
+    public void setvic1(double newVal) {
+        vic1.set(newVal);
+    }
+    public void setvic2(double newVal) {
+        vic2.set(newVal);
+    }
 
     public double get() {
         return (vic1.get() + vic2.get())/2;
+
+    }
+    public double getvic1() {
+        return (vic1.get());
+
+    }
+    public double getvic2() {
+        return (vic2.get());
 
     }
 
