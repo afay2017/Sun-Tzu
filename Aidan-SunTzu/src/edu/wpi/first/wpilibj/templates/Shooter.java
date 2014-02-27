@@ -28,9 +28,9 @@ public class Shooter {
         this.vic = vic;
 
     }
-    public boolean isOn(){
-        return isOn;
-    }
+//    public boolean isOn(){
+//        return isOn;
+//    }
     public void On(){
         isOn = true;
     }
@@ -39,10 +39,22 @@ public class Shooter {
         isOn = true;
     }
     public void Shoot(){
+        solIn.set(false);
+        solOut.set(true);
+
+
+    }
+    public void ResetSol(){
+        solIn.set(true);
+        solOut.set(false);
+    }
+    public void set(double value){
+        vic.set(value);
 
     }
     public void Disable(){
         vic.disable();
+        isOn = false;
        // solIn.
     }
 
