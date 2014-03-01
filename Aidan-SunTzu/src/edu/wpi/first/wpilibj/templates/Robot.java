@@ -77,21 +77,21 @@ public class Robot extends IterativeRobot {
             System.out.println(Controllers.JOYSTICK_AXIS_Y);
 
         }
-//        if (Controllers.getG13Button(4)) {
-//            move = .1;
-//        } else if (Controllers.getG13Button(11)) {
-//            move = -.1;
-//        } else {
-//            move = 0;
-//
-//        }
-//        if (Controllers.getG13Button(10)) {
-//            rot = -.1;
-//        } else if (Controllers.getG13Button(12)) {
-//            rot = .1;
-//        } else {
-//            rot = 0;
-//        }
+        if (Controllers.getG13Button(4)) {
+            move = .1;
+        } else if (Controllers.getG13Button(11)) {
+            move = -.1;
+        } else {
+            move = 0;
+
+        }
+        if (Controllers.getG13Button(10)) {
+            rot = -.1;
+        } else if (Controllers.getG13Button(12)) {
+            rot = .1;
+        } else {
+            rot = 0;
+        }
         if (Controllers.getG13Button(15)) {
             drive.highGear();
         } else {
