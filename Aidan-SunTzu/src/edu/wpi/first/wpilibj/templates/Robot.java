@@ -42,9 +42,9 @@ public class Robot extends IterativeRobot {
 
         shootMotors = new DoubleVictor(new Victor(5), new Victor(6));
         LDrive = new DoubleVictor(new Victor(1), new Victor(2));
-        LDrive = new DoubleVictor(new Victor(3), new Victor(4));
+        RDrive = new DoubleVictor(new Victor(3), new Victor(4));
         shooter = new Shooter(new Solenoid(3), new Solenoid(4), shootMotors);
-        drive = new DriveTrain(new Victor(1), new Victor(2), new Victor(3), new Victor(4), new Solenoid(1), new Solenoid(2), new Gyro(2));
+        drive = new DriveTrain(null, LDrive, null, RDrive, new Solenoid(1), new Solenoid(2), new Gyro(2));
     }
 
     /**
